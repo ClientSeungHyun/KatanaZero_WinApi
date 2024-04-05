@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{950422b0-4199-4ead-9b1b-d70c967a32b7}</ProjectGuid>
+    <RootNamespace>KatanaZeorAPI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="BaseBullet.h" />
+    <ClInclude Include="BloodBGEffect.h" />
+    <ClInclude Include="BloodEffect.h" />
+    <ClInclude Include="BloodScene.h" />
+    <ClInclude Include="BmpMgr.h" />
+    <ClInclude Include="Bold.h" />
+    <ClInclude Include="BombBulletEffect.h" />
+    <ClInclude Include="BomoBullet.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="BossBlinkLaser.h" />
+    <ClInclude Include="BossBulletJump.h" />
+    <ClInclude Include="BossDie.h" />
+    <ClInclude Include="BossDisappear.h" />
+    <ClInclude Include="BossFSM.h" />
+    <ClInclude Include="BossHead.h" />
+    <ClInclude Include="BossHurt.h" />
+    <ClInclude Include="BossIdle.h" />
+    <ClInclude Include="BossLaserGround.h" />
+    <ClInclude Include="BossStage01.h" />
+    <ClInclude Include="BossStage02.h" />
+    <ClInclude Include="BossState.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Caretaker.h" />
+    <ClInclude Include="CBatterUI.h" />
+    <ClInclude Include="CInvenUI.h" />
+    <ClInclude Include="CLaserBullet.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionMgr.h" />
+    <ClInclude Include="CPlayerFall.h" />
+    <ClInclude Include="CPlayerText.h" />
+    <ClInclude Include="CPlayerWallGrab.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="EndingScene.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Fan.h" />
+    <ClInclude Include="Grunt.h" />
+    <ClInclude Include="HitEffect.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemExplosive.h" />
+    <ClInclude Include="LoadingScene.h" />
+    <ClInclude Include="MapLaser.h" />
+    <ClInclude Include="Memento.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerAttack.h" />
+    <ClInclude Include="PlayerFlip.h" />
+    <ClInclude Include="PlayerHurt.h" />
+    <ClInclude Include="PlayerIdle.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="ItemKnife.h" />
+    <ClInclude Include="KatanaZeor_API.h" />
+    <ClInclude Include="KeyMgr.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="PlayerFSM.h" />
+    <ClInclude Include="PlayerJump.h" />
+    <ClInclude Include="PlayerRoll.h" />
+    <ClInclude Include="PlayerRun.h" />
+    <ClInclude Include="PlayerShadow.h" />
+    <ClInclude Include="PlayerState.h" />
+    <ClInclude Include="Pomp.h" />
+    <ClInclude Include="ReflectEffect.h" />
+    <ClInclude Include="RigidBody.h" />
+    <ClInclude Include="BossShootBomb.h" />
+    <ClInclude Include="Shieldcop.h" />
+    <ClInclude Include="SoundMgr.h" />
+    <ClInclude Include="StageScene01.h" />
+    <ClInclude Include="StageScene02.h" />
+    <ClInclude Include="StageScene03.h" />
+    <ClInclude Include="TimeMgr.h" />
+    <ClInclude Include="TimerUI.h" />
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="MyBmp.h" />
+    <ClInclude Include="Obj.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseBullet.cpp" />
+    <ClCompile Include="BloodBGEffect.cpp" />
+    <ClCompile Include="BloodEffect.cpp" />
+    <ClCompile Include="BloodScene.cpp" />
+    <ClCompile Include="BmpMgr.cpp" />
+    <ClCompile Include="Bold.cpp" />
+    <ClCompile Include="BombBulletEffect.cpp" />
+    <ClCompile Include="BomoBullet.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="BossBlinkLaser.cpp" />
+    <ClCompile Include="BossBulletJump.cpp" />
+    <ClCompile Include="BossDie.cpp" />
+    <ClCompile Include="BossDisappear.cpp" />
+    <ClCompile Include="BossFSM.cpp" />
+    <ClCompile Include="BossHead.cpp" />
+    <ClCompile Include="BossHurt.cpp" />
+    <ClCompile Include="BossIdle.cpp" />
+    <ClCompile Include="BossLaserGround.cpp" />
+    <ClCompile Include="BossStage01.cpp" />
+    <ClCompile Include="BossStage02.cpp" />
+    <ClCompile Include="BossState.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Caretaker.cpp" />
+    <ClCompile Include="CBatterUI.cpp" />
+    <ClCompile Include="CInvenUI.cpp" />
+    <ClCompile Include="CLaserBullet.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionMgr.cpp" />
+    <ClCompile Include="CPlayerFall.cpp" />
+    <ClCompile Include="CPlayerText.cpp" />
+    <ClCompile Include="CPlayerWallGrab.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="EndingScene.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Fan.cpp" />
+    <ClCompile Include="Grunt.cpp" />
+    <ClCompile Include="HitEffect.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemExplosive.cpp" />
+    <ClCompile Include="LoadingScene.cpp" />
+    <ClCompile Include="MapLaser.cpp" />
+    <ClCompile Include="Memento.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerAttack.cpp" />
+    <ClCompile Include="PlayerFlip.cpp" />
+    <ClCompile Include="PlayerHurt.cpp" />
+    <ClCompile Include="PlayerIdle.cpp" />
+    <ClCompile Include="ItemKnife.cpp" />
+    <ClCompile Include="KatanaZeor_API.cpp" />
+    <ClCompile Include="KeyMgr.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="PlayerFSM.cpp" />
+    <ClCompile Include="PlayerJump.cpp" />
+    <ClCompile Include="PlayerRoll.cpp" />
+    <ClCompile Include="PlayerRun.cpp" />
+    <ClCompile Include="PlayerShadow.cpp" />
+    <ClCompile Include="PlayerState.cpp" />
+    <ClCompile Include="Pomp.cpp" />
+    <ClCompile Include="ReflectEffect.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
+    <ClCompile Include="BossShootBomb.cpp" />
+    <ClCompile Include="Shieldcop.cpp" />
+    <ClCompile Include="SoundMgr.cpp" />
+    <ClCompile Include="StageScene01.cpp" />
+    <ClCompile Include="StageScene02.cpp" />
+    <ClCompile Include="StageScene03.cpp" />
+    <ClCompile Include="TimeMgr.cpp" />
+    <ClCompile Include="TimerUI.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="MyBmp.cpp" />
+    <ClCompile Include="Obj.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="UI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="KatanaZeor_API.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Image\effect\cursor.bmp" />
+    <Image Include="KatanaZeor_API.ico" />
+    <Image Include="small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor1.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
